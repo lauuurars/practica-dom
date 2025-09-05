@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick y Morty API - Ejercicio</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #61dafb;
+        }
+
+        #btnCargar {
+            background-color: #61dafb;
+            color: #0d1117;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        #btnCargar:hover {
+            background-color: #21a1f1;
+            transform: scale(1.05);
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .character-card {
+            background-color: #1c1c1c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .character-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .character-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 10px 0 5px 0;
+            color: #61dafb;
+        }
+
+        .character-status {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #c1c1c1;
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick y Morty API - Ejercicio</title>
+</head>
+
+<body>
+    <h1>Personajes de Rick y Morty</h1>
+    <button id="btnCargar">Cargar Personajes</button>
+    <div id="contenedor"></div>
+
+
+    <script src="ejercicio-6.js"></script>
+</body>
+</html>
